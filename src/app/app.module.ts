@@ -8,9 +8,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {CommonModule} from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
-import {HomePageRoutingModule} from './login/login-routing.module';
-import {RobotExpressiveModule} from './login/components/vinyle/vinyle.component';
-import {LoginPageModule} from "./login/login.module";
+import {RobotExpressiveModule} from './components/vinyle/vinyle.component';
+
 
 
 @NgModule({
@@ -18,8 +17,7 @@ import {LoginPageModule} from "./login/login.module";
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CommonModule,
     ReactiveFormsModule,
-    IonicModule,
-    HomePageRoutingModule, RobotExpressiveModule, LoginPageModule],
+    IonicModule, RobotExpressiveModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

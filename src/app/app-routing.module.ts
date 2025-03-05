@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import {VinyleComponent} from './login/components/vinyle/vinyle.component';
+import {VinyleComponent} from './components/vinyle/vinyle.component';
 
 const routes: Routes = [
   {

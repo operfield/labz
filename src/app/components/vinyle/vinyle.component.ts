@@ -10,7 +10,7 @@ import {
   LoopOnce,
   Mesh,
 } from 'three';
-import { LoginStore } from '../../login.store';
+
 import {NgtDirectionalLightModule, NgtHemisphereLightModule} from '@angular-three/core/lights';
 import {NgtSobaPlaneModule} from '@angular-three/soba/shapes';
 import {NgtSobaStarsModule} from '@angular-three/soba/staging';
