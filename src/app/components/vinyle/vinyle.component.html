@@ -2,10 +2,7 @@
   (created)="$event.camera.lookAt(0, 2, -1)"
   [shadows]="true"
   [camera]="{ fov: 35, near: 0.25, far: 2000, position: [-5, 2, 10] }"
-  [scene]="{ background: '#033645' | color, fog: ['#e0e0e0', 20, 100] | fog }"
 >
-  <!--    sky-->
-  <ngt-soba-stars></ngt-soba-stars>
 
   <!--      lights-->
   <ngt-hemisphere-light
@@ -20,13 +17,13 @@
 
 
   <ng-container *ngIf="vinyle$ | async as vinyle" >
-  <ngt-primitive
-    [object]="vinyle.scene"
-    [position]="[-4, 1.5, -3]"
-    (ready)="onReady(vinyle.scene)"
-    (animateReady)="onAnimateVinyle(vinyle.scene)"
-  ></ngt-primitive>
-</ng-container>
+    <ngt-primitive
+      [object]="vinyle.scene"
+      [position]="[-4, 1.5, -3]"
+      (ready)="onReady(vinyle.scene)"
+      (animateReady)="onAnimateVinyle(vinyle.scene)"
+    ></ngt-primitive>
+  </ng-container>
 
 
   <ng-container *ngIf="manette$ | async as manette">

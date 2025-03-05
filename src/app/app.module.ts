@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {CommonModule} from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
-import {RobotExpressiveModule} from './components/vinyle/vinyle.component';
+import {VinyleModule} from './components/vinyle/vinyle.component';
+import {MainPageModule} from './components/main-page/main-page.component';
 
 
 
@@ -17,7 +18,7 @@ import {RobotExpressiveModule} from './components/vinyle/vinyle.component';
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CommonModule,
     ReactiveFormsModule,
-    IonicModule, RobotExpressiveModule],
+    IonicModule, VinyleModule, MainPageModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

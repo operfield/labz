@@ -1,6 +1,15 @@
 import {NgtCoreModule, NgtDestroyedService, NgtRender} from '@angular-three/core';
 import {NgtGLTFLoaderService, NgtSobaLoaderModule} from '@angular-three/soba/loaders';
-import {ChangeDetectionStrategy, Component, ElementRef, Input, NgModule, OnInit, ViewChild} from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  NgModule,
+  OnInit,
+  ViewChild
+} from '@angular/core';
 import {Observable, takeUntil} from 'rxjs';
 import {
   AnimationAction,
@@ -26,6 +35,7 @@ import {NgtPrimitiveModule} from '@angular-three/core/primitive';
   providers: [NgtDestroyedService],
 })
 export class VinyleComponent implements OnInit {
+  @HostListener('window:scroll', [])
 
   vinyle$ = this.gltfLoaderService.load('assets/platine.glb'); // Déclaration sans initialisation immédiate
 
@@ -41,6 +51,7 @@ export class VinyleComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+
   }
 
   onReady(model: Group) {
@@ -68,6 +79,7 @@ export class VinyleComponent implements OnInit {
 
     model.rotation.y += 0.01;
   }
+
 }
 
 @NgModule({
@@ -86,4 +98,4 @@ export class VinyleComponent implements OnInit {
     NgtPrimitiveModule,
   ],
 })
-export class RobotExpressiveModule {}
+export class VinyleModule {}
