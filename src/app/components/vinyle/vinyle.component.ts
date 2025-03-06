@@ -28,6 +28,7 @@ import {NgtGridHelperModule} from '@angular-three/core/helpers';
 import {CommonModule} from '@angular/common';
 import {NgtPrimitiveModule} from '@angular-three/core/primitive';
 
+
 @Component({
   selector: 'app-3d-objects',
   templateUrl: './vinyle.component.html',
@@ -44,11 +45,10 @@ export class VinyleComponent implements OnInit {
   lego$ = this.gltfLoaderService.load('/labz/assets/lego.glb');
 
 
-
   constructor(
     private gltfLoaderService: NgtGLTFLoaderService,
-
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
 
@@ -83,7 +83,7 @@ export class VinyleComponent implements OnInit {
 }
 
 @NgModule({
-  declarations: [ VinyleComponent],
+  declarations: [VinyleComponent],
   exports: [VinyleComponent],
   imports: [
     NgtCoreModule,
@@ -98,4 +98,5 @@ export class VinyleComponent implements OnInit {
     NgtPrimitiveModule,
   ],
 })
-export class VinyleModule {}
+export class VinyleModule {
+}
