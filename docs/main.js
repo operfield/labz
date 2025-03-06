@@ -219,9 +219,9 @@ __webpack_require__.r(__webpack_exports__);
 let VinyleComponent = class VinyleComponent {
     constructor(gltfLoaderService) {
         this.gltfLoaderService = gltfLoaderService;
-        this.vinyle$ = this.gltfLoaderService.load('assets/platine.glb'); // Déclaration sans initialisation immédiate
-        this.manette$ = this.gltfLoaderService.load('assets/manette.glb');
-        this.lego$ = this.gltfLoaderService.load('assets/lego.glb');
+        this.vinyle$ = this.gltfLoaderService.load('/labz/assets/platine.glb'); // Déclaration sans initialisation immédiate
+        this.manette$ = this.gltfLoaderService.load('/labz/assets/manette.glb');
+        this.lego$ = this.gltfLoaderService.load('/labz/assets/lego.glb');
     }
     ngOnInit() {
     }
@@ -584,7 +584,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<div  >\n\n  <div class=\"présentation\">\n    <h1>L'effet Paralax</h1>\n    <p>\n\n    </p>\n\n  </div>\n\n<div class=\"blender\">\n  <h1> La modélisation 3D</h1>\n  <p>\n    Objectif: Modéliser en 3D certains de mes hobbies et essayer de les\n    les afficher sur une page web.\n\n    Outils: Blender, Angular-three\n\n    Ceci ma permis à mieux comprendre l'utilisation du logiciel Blender\n  </p>\n\n    <ion-content class=\"ionic\">\n      <app-3d-objects></app-3d-objects>\n    </ion-content>\n</div>\n\n\n  <div class=\"paralax\">\n    <h1>L'effet Paralax</h1>\n    <p>\n\n    </p>\n\n  </div>\n\n\n  <div class=\"api\">\n    <h1>L'effet Paralax</h1>\n    <p>\n\n    </p>\n\n  </div>\n\n</div>\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<div>\n\n  <div class=\"présentation\">\n    <h1>L'effet Paralax</h1>\n    <p>\n\n    </p>\n\n  </div>\n\n<div class=\"blender\">\n  <h1> La modélisation 3D</h1>\n  <p>\n    Objectif: Modéliser en 3D certains de mes hobbies et essayer de les\n    les afficher sur une page web.\n\n    Outils: Blender, Angular-three\n\n    Ceci ma permis à mieux comprendre l'utilisation du logiciel Blender\n  </p>\n\n    <ion-content class=\"ionic\">\n      <app-3d-objects></app-3d-objects>\n    </ion-content>\n</div>\n\n\n  <div class=\"paralax\">\n    <h1>L'effet Paralax</h1>\n    <p>\n\n    </p>\n\n  </div>\n\n\n  <div class=\"api\">\n    <h1>L'effet Paralax</h1>\n    <p>\n\n    </p>\n\n  </div>\n\n</div>\n");
 
 /***/ }),
 

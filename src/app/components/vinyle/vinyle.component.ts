@@ -37,11 +37,11 @@ import {NgtPrimitiveModule} from '@angular-three/core/primitive';
 export class VinyleComponent implements OnInit {
   @HostListener('window:scroll', [])
 
-  vinyle$ = this.gltfLoaderService.load('assets/platine.glb'); // Déclaration sans initialisation immédiate
+  vinyle$ = this.gltfLoaderService.load('/labz/assets/platine.glb'); // Déclaration sans initialisation immédiate
 
-  manette$ = this.gltfLoaderService.load('assets/manette.glb');
+  manette$ = this.gltfLoaderService.load('/labz/assets/manette.glb');
 
-  lego$ = this.gltfLoaderService.load('assets/lego.glb');
+  lego$ = this.gltfLoaderService.load('/labz/assets/lego.glb');
 
 
 
